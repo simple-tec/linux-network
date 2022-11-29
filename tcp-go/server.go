@@ -5,7 +5,7 @@ import (
 )
 func main() {
 	network := "tcp"
-	address := "127.0.0.1:30000"
+	address := "127.0.0.1:8089"
 	listen, err := net.Listen(network, address)
 	if err != nil {
 		fmt.Printf("main | net.Listen(%s, %s) failed to execute", network, address)
@@ -18,6 +18,6 @@ func main() {
         return
     }
     defer conn.Close()
-    msg := `Hello World! This is a test demo.`
+    msg := `Hello World! This is a golang demo.`
     conn.Write([]byte(msg))
 }

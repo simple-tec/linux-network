@@ -38,7 +38,7 @@ int main()
 												  
     len = read(sockfd, &serverResponse, sizeof(serverResponse));
     if(len > 0) {
-        printf("Received data from server : %s", serverResponse);
+        printf("from server : %s", serverResponse);
     }
     // close the socket 
 	close(sockfd); 

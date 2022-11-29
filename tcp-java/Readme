@@ -1,0 +1,12 @@
+1. build and run server
+# javac Server.java
+# java Server
+
+2. build and run client
+# javac Client.java
+# javac Client
+
+show syscall (not show)
+# strace -o server.log java Server 
+show syscall
+# strace -o server.log -f java Server

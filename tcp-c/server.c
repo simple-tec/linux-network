@@ -14,7 +14,7 @@ int main()
 { 
 	int sockfd, clientfd, len; 
 	struct sockaddr_in servaddr, cli;
-    char serverMessage[MAX] = "Hello from server\n";
+    char serverMessage[MAX] = "Hello World! This is a C demo.\n";
 	// socket create and verification	
 	sockfd = socket(AF_INET, SOCK_STREAM, 0); 
 	if (sockfd == -1) { 
